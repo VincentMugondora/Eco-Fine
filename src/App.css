@@ -11,3 +11,43 @@
     height: 1px;
     background: rgb(182, 180, 180);
 }
+
+/* hero section */
+.hero{
+    background: linear-gradient(),url('/images/bg-1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Keyframes for up and down animation */
+@keyframes updown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Keyframes for pulsing play button */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Applying the up-down animation to the image */
+.animate-updown {
+  animation: updown 2s ease-in-out infinite;
+}
+
+/* Applying the pulse animation to the play button */
+.animate-pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+}

@@ -3,7 +3,7 @@ import PlantImage from "/images/hero-5-1.jpg"; // Replace with your actual image
 
 const HeroSection = () => {
   return (
-    <div className="bg-[#00254F] h-[90vh] flex items-center justify-center py-10">
+    <div className="bg-[#00252F] hero h-[90vh] flex items-center justify-center py-10">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-10 lg:px-20">
         {/* Text Section */}
         <div className="text-white max-w-lg">
