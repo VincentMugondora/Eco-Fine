@@ -1,9 +1,12 @@
-import React from 'react'
+import EcoFriendlyComponent from "../home/homeComponents/EcoFriendlyComponent";
+import ServicesSection from "../home/homeComponents/ServiceSection";
+
 
 const About = () => {
   return (
     <div>
-      <h1>Welcome to  about Page</h1>;
+      <EcoFriendlyComponent />
+      <ServicesSection />
     </div>
   );
 }

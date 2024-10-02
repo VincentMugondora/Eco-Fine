@@ -15,8 +15,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#02282B] w-screen p-4">
-      <div className="container">
+    <nav className="bg-[#02282B] shadow-lg shadow-gray-50 w-screen p-4">
+      <div className="container ">
         <div className="flex items-center justify-between w-full">
           {/* Logo Section */}
           <div className="text-white font-bold text-lg">
