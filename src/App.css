@@ -13,8 +13,8 @@
 }
 
 /* hero section */
-.hero{
-    background: linear-gradient(),url('/images/bg-1.jpg') no-repeat;
+.hero {
+    background: linear-gradient(to bottom, #02282B, rgba(2, 40, 43, 0.889)), url('/images/bg-1.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }

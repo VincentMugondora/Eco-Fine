@@ -19,18 +19,18 @@ const HeroSection = () => {
           </p>
           <Link
             to="/discover"
-            className="inline-block bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition"
+            className="inline-block bg-green-500 text-white px-6 py-3 rounded-lg no-underline poppins-semibold hover:bg-green-600 transition"
           >
             Discover More
           </Link>
         </div>
 
         {/* Image Section */}
-        <div className="mt-10 md:mt-0 md:ml-10">
+        <div className="-mb-[46px] -mr-24 md:mt-0 md:ml-10">
           <img
             src={PlantImage}
             alt="Plant"
-            className="w-full h-auto max-w-sm"
+            className="w-72 h-auto max-w-sm"
           />
         </div>
       </div>
