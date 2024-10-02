@@ -1,0 +1,13 @@
+.line{
+    width: 100%;
+    position: absolute;
+    right: 0;
+    height: 1px;
+    background: rgb(182, 180, 180);
+}
+.lines{
+    width: 89%;
+    position: absolute;
+    height: 1px;
+    background: rgb(182, 180, 180);
+}

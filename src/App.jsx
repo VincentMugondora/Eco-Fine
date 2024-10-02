@@ -4,12 +4,12 @@ import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home'; 
 import About from './components/about/About'; 
 import Service from './components/service/Service';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Blog from './components/blog/Blog'; 
 import Contact from './components/contact/Contact'; 
 
 const App = () => {
     return (
-        <div className="container">
           <Router>
             <Navbar />
             <Routes>
@@ -20,7 +20,6 @@ const App = () => {
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </Router>
-        </div>
     );
 };
 
