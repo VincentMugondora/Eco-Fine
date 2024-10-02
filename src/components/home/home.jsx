@@ -6,7 +6,7 @@ import ServiceSection from "./homeComponents/ServiceSection";
 const Home = () => {
   return (
     <div className="">
-      <div className="w-screen h-[1px] bg-[#acaaaa]"></div>
+      <div className="w-full h-[1px] bg-[#acaaaa]"></div>
      <HeroSection />
      <EcoFriendlyComponent />
      <ServiceSection />
