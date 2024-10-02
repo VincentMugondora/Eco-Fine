@@ -28,6 +28,14 @@
     transform: translateY(-20px);
   }
 }
+@keyframes leftright {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
 
 /* Keyframes for pulsing play button */
 @keyframes pulse {
@@ -50,4 +58,8 @@
 /* Applying the pulse animation to the play button */
 .animate-pulse {
   animation: pulse 1.5s infinite ease-in-out;
+}
+
+.arrows{
+    animation: leftright 2s ease-in-out infinite;
 }
