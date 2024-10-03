@@ -25,7 +25,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="bg-[#f8f8f0] py-12 px-4">
+    <section className="bg-[#f8f8f0] py-12 relative px-4">
       <div className="container">
         {/* Header Section */}
         <div className="text-center mb-12">
@@ -58,6 +58,10 @@ const ServicesSection = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div>
+          <img src="/images/service-shape1-1.png" alt="branch" className="absolute top-0 branch right-0" />
+          <img src="/images/service-shape1-2.png" alt="branch" className="absolute branch-one top-0 left-0" />
         </div>
 
         {/* Partner Logos Section */}

@@ -28,6 +28,14 @@
     transform: translateY(-20px);
   }
 }
+@keyframes upsdowns {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
 @keyframes updowns {
   0% {
     transform: translateY(0) translateX(0);
@@ -91,4 +99,10 @@
 .leaf-one{
   animation: updowns 20s ease-in-out infinite;
   transform: rotate(360deg);
+}
+.branch-one{
+  animation: upsdowns 3s ease-in-out infinite;
+}
+.branch{
+  animation: upsdowns 4s ease-in-out infinite;
 }

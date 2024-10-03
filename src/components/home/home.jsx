@@ -1,6 +1,7 @@
 import EcoFriendlyComponent from "./homeComponents/EcoFriendlyComponent";
 import HeroSection from "./homeComponents/HeroSection";
 import ServiceSection from "./homeComponents/ServiceSection";
+import StepsSection from "./homeComponents/StepsSection";
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
      <HeroSection />
      <EcoFriendlyComponent />
      <ServiceSection />
+     <StepsSection />
     </div>
   );
 }
