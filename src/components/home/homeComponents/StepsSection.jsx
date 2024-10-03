@@ -1,58 +1,89 @@
 import { FaLeaf, FaSolarPanel, FaRecycle, FaShoppingBag } from "react-icons/fa";
 
-const StepsSection = () => {
+const StepProcess = () => {
+  const stepsData = [
+    {
+      id: 1,
+      title: "Sustain Solutions",
+      icon: <FaLeaf className="text-green-500 text-4xl" />,
+      image: "/images/process-arrow1-1.png",
+    },
+    {
+      id: 2,
+      title: "Renewable Energy",
+      icon: <FaSolarPanel className="text-green-500 text-4xl" />,
+      image: "/images/process-arrow1-2.png",
+    },
+    {
+      id: 3,
+      title: "Green Building",
+      icon: <FaRecycle className="text-green-500 text-4xl" />,
+      image: "/images/process-arrow1-1.png",
+    },
+    {
+      id: 4,
+      title: "Sustainable Shopping",
+      icon: <FaShoppingBag className="text-green-500 text-4xl" />,
+    },
+  ];
+
   return (
-    <section className="bg-white py-16 px-4">
-      {/* Header */}
-      <div className="text-center mb-12">
-        <h3 className="text-green-500 text-sm uppercase mb-2 tracking-wide">
-          4 Step Process
-        </h3>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-          Go Green And Reduce <br /> Your Carbon Footprint
-        </h2>
+    <section className="bg-white relative py-12 px-4 lg:px-16">
+      <div className="container pt-32">
+        {/* Header Section */}
+        <div className="text-center mb-12">
+          <h3 className="text-green-500 text-sm uppercase mb-2">
+            4 Step Process
+          </h3>
+          <h2 className="text-2xl md:text-4xl font-bold">
+            Go Green And Reduce Your Carbon Footprint
+          </h2>
+        </div>
+
+        {/* Steps Section */}
+        <div className="grid mt-32 grid-cols-1 lg:grid-cols-4 items-start">
+          {stepsData.map(({ id, title, icon, image }, index) => (
+            <div key={id} className="flex items-center">
+              {/* Rectangle for Step Card */}
+              <div
+                className={`flex flex-col items-center text-center bg-white rounded-lg p-4 shadow transition-transform duration-300
+                  ${
+                    index === 1 || index === 3
+                      ? "translate-y-20"
+                      : "translate-y-0"
+                  }`}
+              >
+                {/* Circle for Icon */}
+                <div className="relative bg-gray-300 rounded-full w-40 h-40 flex items-center justify-center mb-4">
+                  {icon}
+                  <div className="absolute -top-2 -right-2 bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center">
+                    {`0${id}`}
+                  </div>
+                </div>
+                <p className="font-semibold">{title}</p>
+              </div>
+              {/* Adjusted Image Height */}
+              <img
+                src={image}
+                alt="arrow"
+                className={`h-16 ${index === 1 ? "mt-32" : "mt-0"}`}
+              />
+            </div>
+          ))}
+        </div>
+        <img
+          src="/images/service-shape1-2.png"
+          alt="branch"
+          className="absolute branch-one top-0 left-0"
+        />
       </div>
-
-      {/* Steps */}
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-10 md:space-y-0 md:space-x-8 lg:space-x-16">
-        {/* Step 1 */}
-        <div className="relative text-center bg-[#f8f8f0] p-6 rounded-full shadow-lg w-52 h-52 flex flex-col items-center justify-center">
-          <div className="absolute top-0 left-[50%] transform -translate-x-[50%] -translate-y-[50%] bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
-            01
-          </div>
-          <FaLeaf className="text-green-500 text-6xl mb-4" />
-          <h4 className="font-bold text-lg text-gray-800">Sustain Solutions</h4>
-        </div>
-
-        {/* Step 2 */}
-        <div className="relative text-center bg-[#f8f8f0] p-6 rounded-full shadow-lg w-52 h-52 flex flex-col items-center justify-center">
-          <div className="absolute top-0 left-[50%] transform -translate-x-[50%] -translate-y-[50%] bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
-            02
-          </div>
-          <FaSolarPanel className="text-green-500 text-6xl mb-4" />
-          <h4 className="font-bold text-lg text-gray-800">Renewable Energy</h4>
-        </div>
-
-        {/* Step 3 */}
-        <div className="relative text-center bg-[#f8f8f0] p-6 rounded-full shadow-lg w-52 h-52 flex flex-col items-center justify-center">
-          <div className="absolute top-0 left-[50%] transform -translate-x-[50%] -translate-y-[50%] bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
-            03
-          </div>
-          <FaRecycle className="text-green-500 text-6xl mb-4" />
-          <h4 className="font-bold text-lg text-gray-800">Green Building</h4>
-        </div>
-
-        {/* Step 4 */}
-        <div className="relative text-center bg-[#f8f8f0] p-6 rounded-full shadow-lg w-52 h-52 flex flex-col items-center justify-center">
-          <div className="absolute top-0 left-[50%] transform -translate-x-[50%] -translate-y-[50%] bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
-            04
-          </div>
-          <FaShoppingBag className="text-green-500 text-6xl mb-4" />
-          <h4 className="font-bold text-lg text-gray-800">Sustainable</h4>
-        </div>
-      </div>
+      <img
+        src="/images/process-shape1-2.png"
+        alt="trees"
+        className="float-right"
+      />
     </section>
   );
 };
 
-export default StepsSection;
+export default StepProcess;
