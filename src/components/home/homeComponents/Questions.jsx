@@ -7,43 +7,16 @@ function Questions() {
   const [showVolunteer, setShowVolunteer] = useState(false);
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-md-6 bg-success text-white p-4 position-relative">
-          <div className="d-flex flex-column align-items-center gap-3">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/108/108222.png"
-              alt="arrow"
-              className="w-25"
-            />
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/108/108222.png"
-              alt="arrow"
-              className="w-25"
-            />
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/108/108222.png"
-              alt="arrow"
-              className="w-25"
-            />
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/108/108222.png"
-              alt="arrow"
-              className="w-25"
-            />
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/108/108222.png"
-              alt="arrow"
-              className="w-25"
-            />
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/108/108222.png"
-              alt="arrow"
-              className="w-25"
-            />
-          </div>
+    <div className="container-fluid mt-10">
+      <div className="row w-full">
+        <div className="col-md-6 w-full">
+          <img
+            src="/images/globe.jpg"
+            alt="globe-image"
+            className="object-cover lg:-ml-3 w-full h-full"
+          />
         </div>
-        <div className="col-md-6 p-4">
+        <div className="col-md-6">
           <h1 className="text-center mb-4">ASK SOMETHING</h1>
           <h2 className="text-center mb-4">
             Keep the scene green by taking the lead
