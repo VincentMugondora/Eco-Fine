@@ -66,7 +66,7 @@ const Navbar = () => {
         </div>
         {/* Mobile Menu */}
         <ul
-          className={`md:hidden fixed top-0 left-0 w-3/4 h-full bg-white p-4 transition-transform duration-500 ease-in-out transform ${
+          className={`md:hidden fixed z-50 top-0 left-0 w-3/4 h-full bg-white p-4 transition-transform duration-500 ease-in-out transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } shadow-2xl`}
         >

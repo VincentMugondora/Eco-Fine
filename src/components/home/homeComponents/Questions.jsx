@@ -1,89 +1,14 @@
-import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-function Questions() {
-  const [showPurpose, setShowPurpose] = useState(false);
-  const [showUnique, setShowUnique] = useState(false);
-  const [showVolunteer, setShowVolunteer] = useState(false);
-
+const Questions = () => {
   return (
-    <div className="container-fluid mt-10">
-      <div className="row w-full">
-        <div className="col-md-6 w-full">
-          <img
-            src="/images/globe.jpg"
-            alt="globe-image"
-            className="object-cover lg:-ml-3 w-full h-full"
-          />
-        </div>
+    <section className="container-fluid ">
+      <div className="row bg-[#F8F7F0]">
         <div className="col-md-6">
-          <h1 className="text-center mb-4">ASK SOMETHING</h1>
-          <h2 className="text-center mb-4">
-            Keep the scene green by taking the lead
-          </h2>
-          <p className="text-secondary mb-4">
-            Ecology is the study of the relationship between living organisms
-            and their environment, including interactions between different
-            organisms and species.
-          </p>
-
-          <button
-            onClick={() => setShowPurpose(!showPurpose)}
-            className="btn btn-success btn-block mb-3"
-          >
-            {showPurpose ? (
-              <span>- What is the purpose of your company?</span>
-            ) : (
-              <span>+ What is the purpose of your company?</span>
-            )}
-          </button>
-          {showPurpose && (
-            <p className="text-secondary mb-4">
-              Ecology is the study of the relationships between living organisms
-              and their environment, including the interactions between
-              different species.
-            </p>
-          )}
-
-          <button
-            onClick={() => setShowUnique(!showUnique)}
-            className="btn btn-success btn-block mb-3"
-          >
-            {showUnique ? (
-              <span>- What makes your company unique?</span>
-            ) : (
-              <span>+ What makes your company unique?</span>
-            )}
-          </button>
-          {showUnique && (
-            <p className="text-secondary mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-              asperiores fugit, aspernatur magni ullam omnis dignissimos
-              consequuntur aut.
-            </p>
-          )}
-
-          <button
-            onClick={() => setShowVolunteer(!showVolunteer)}
-            className="btn btn-success btn-block mb-3"
-          >
-            {showVolunteer ? (
-              <span>- How much time do I need to volunteer?</span>
-            ) : (
-              <span>+ How much time do I need to volunteer?</span>
-            )}
-          </button>
-          {showVolunteer && (
-            <p className="text-secondary mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-              asperiores fugit, aspernatur magni ullam omnis dignissimos
-              consequuntur aut.
-            </p>
-          )}
+          <img src="/images/globe.jpg" alt="img-globe" className="  " />
         </div>
+        <div className="col-md-6"></div>
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default Questions;
