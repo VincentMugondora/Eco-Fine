@@ -110,3 +110,8 @@
   background: linear-gradient(to right, #212121b8, #151515b8) ,url("/public/images/bg-3.jpg") no-repeat;
   background-size: cover;
 }
+.footer{
+  background: url('/images/footer/footer (1).jpg') no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
