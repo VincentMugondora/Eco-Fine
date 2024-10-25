@@ -15,7 +15,7 @@ const FooterTop = () => {
               <h5>Location</h5>
               <div className="">
                 <p>258 Daniel Mansion 258</p>
-                <p className="-mt-5">Berlin Germany</p>
+                <p className="-mt-2">Berlin Germany</p>
               </div>
             </div>
           </div>
@@ -27,7 +27,7 @@ const FooterTop = () => {
               <h5>Working Hours</h5>
               <div className="">
                 <p>Weekdays 8am-22pm</p>
-                <p className="-mt-5">Weekend 10am -12pm</p>
+                <p className="-mt-2">Weekend 10am -12pm</p>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ const FooterTop = () => {
               <h5>Contact Us</h5>
               <div className="">
                 <p>ecofineinfo@ecofine.com</p>
-                <p className="-mt-5">(+259)2257 6156</p>
+                <p className="-mt-2">(+259)2257 6156</p>
               </div>
             </div>
           </div>
