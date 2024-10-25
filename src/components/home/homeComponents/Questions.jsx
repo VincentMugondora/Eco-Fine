@@ -24,7 +24,12 @@ const Team = () => {
           </p>
           <div className="flex justify-center">
             {" "}
-           <Buttons />
+            <Buttons
+              to="/about"
+              text="Explore Team"
+              bgColor="#00B150"
+              textColor="white"
+            />
           </div>
         </div>
         <div>
