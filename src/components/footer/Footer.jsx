@@ -1,3 +1,4 @@
+import FooterMiddle from "./footer components/FooterMiddle";
 import FooterTop from "./footer components/FooterTop";
 
 
@@ -7,7 +8,7 @@ const Footer = () => {
       <section className="container-fluid bg-[#24231D]">
         <FooterTop />
         <div className="">
-          
+          <FooterMiddle />
         </div>
       </section>
       <div className="bg-[#1D1C17] poppins-light text-white container-fluid">
