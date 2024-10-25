@@ -106,3 +106,7 @@
 .branch{
   animation: upsdowns 4s ease-in-out infinite;
 }
+.team{
+  background: linear-gradient(to right, #212121b8, #151515b8) ,url("/public/images/bg-3.jpg") no-repeat;
+  background-size: cover;
+}
