@@ -7,6 +7,7 @@ import Service from './components/service/Service';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Blog from './components/blog/Blog'; 
 import Contact from './components/contact/Contact'; 
+import Footer from "./components/footer/Footer";
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
+            <Footer />
         </Router>
     );
 };
