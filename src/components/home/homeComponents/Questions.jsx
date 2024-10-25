@@ -2,10 +2,7 @@
 import Image from "/images/2-1.jpg";
 import Image2 from "/images/2-3.jpg";
 import Image3 from "/images/2-2.jpg";
-import { LiaFacebookF } from "react-icons/lia";
-import { FaTwitter } from "react-icons/fa";
-import { SiBehance } from "react-icons/si";
-import { IoLogoYoutube } from "react-icons/io";
+import Icons from "../../miscallaneous/Icons";
 
 const Team = () => {
   const teams = [
@@ -17,7 +14,9 @@ const Team = () => {
   return (
     <div className="w-full py-10 mt-28 lg:mt-80 h-auto team">
       <section className="container">
-        <p className="text-2xl text-[#00B150] text-center font-bold">Best Team</p>
+        <p className="text-2xl text-[#00B150] text-center font-bold">
+          Best Team
+        </p>
         <div className="mx-auto flex flex-col justify-between text-center">
           <p className="text-3xl text-white font-bold">
             Waste is avoided through conservation
@@ -50,18 +49,7 @@ const Team = () => {
                   </h2>
                   <p className="text-[grey] font-bold">{team.position}</p>
                   <div className="flex justify-evenly w-full">
-                    <div className="p-2 bg-[#00B150] rounded-sm">
-                      <LiaFacebookF className="text-white" />
-                    </div>
-                    <div className="p-2 bg-[#00B150] rounded-sm">
-                      <FaTwitter className="text-white"/>
-                    </div>
-                    <div className="p-2 bg-[#00B150] rounded-sm">
-                      <SiBehance className="text-white"/>
-                    </div>
-                    <div className="p-2 bg-[#00B150] rounded-sm">
-                      <IoLogoYoutube className="text-white"/>
-                    </div>
+                    <Icons bgColor="#00B150" />
                   </div>
                 </div>
               </div>

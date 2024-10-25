@@ -1,3 +1,4 @@
+import Icons from "../../miscallaneous/Icons";
 import Logo from "/logo2 (1).svg"
 
 const FooterMiddle = () => {
@@ -10,7 +11,7 @@ const FooterMiddle = () => {
           maintaining a healthy and sustainable ecology.
         </p>
         <div>
-          
+          <Icons bgColor="#373631" iconColor="white" />
         </div>
       </div>
     </div>
