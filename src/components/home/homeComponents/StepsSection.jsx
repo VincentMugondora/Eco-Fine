@@ -43,13 +43,13 @@ const StepProcess = () => {
         {/* Steps Section */}
         <div className="grid mt-32 grid-cols-1 lg:grid-cols-4 items-start">
           {stepsData.map(({ id, title, icon, image }, index) => (
-            <div key={id} className="flex items-center">
+            <div key={id} className="flex mt-10 items-center">
               {/* Rectangle for Step Card */}
               <div
-                className={`flex flex-col items-center text-center bg-white rounded-lg p-4 shadow transition-transform duration-300
+                className={`flex flex-col w-full items-center text-center bg-white rounded-lg p-4 shadow transition-transform duration-300
                   ${
                     index === 1 || index === 3
-                      ? "translate-y-20"
+                      ? "lg:translate-y-20"
                       : "translate-y-0"
                   }`}
               >
@@ -65,8 +65,10 @@ const StepProcess = () => {
               {/* Adjusted Image Height */}
               <img
                 src={image}
-                alt="arrow"
-                className={`h-16 ${index === 1 ? "mt-32" : "mt-0"}`}
+                alt=""
+                className={`h-16 hidden lg:block ${
+                  index === 1 ? "lg:mt-32" : "mt-0"
+                }`}
               />
             </div>
           ))}

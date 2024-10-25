@@ -42,12 +42,12 @@ const ServicesSection = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-white relative lg:h-[50vh] rounded-lg shadow-lg"
+              className="bg-white relative mt-10 lg:h-[50vh] rounded-lg shadow-lg"
             >
               <div className="overflow-hidden rounded-lg w-full h-full">
                 <img src={service.image} alt={service.title} className="h-full object-cover " />
               </div>
-              <div className="p-6 absolute lg:w-[90%] bg-white -bottom-14 w-full left-1/2 transform -translate-x-1/2 hover:bg-[#00B150] text-center transition duration-500">
+              <div className="p-6 absolute lg:w-[90%] bg-white -bottom-14 w-full left-1/2 rounded-b-lg transform -translate-x-1/2 hover:bg-[#00B150] text-center transition duration-500">
                 <p className="text-gray-500 lg:mt-10 text-sm mb-1">
                   {service.description}
                 </p>
@@ -65,7 +65,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Partner Logos Section */}
-        <div className="flex flex-wrap container justify-between mt-32 space-x-4">
+        <div className="flex flex-wrap gap-2 container justify-between mt-32 space-x-4">
           <img src="/images/4-1 (1).png" alt="Partner 1" className="w-52 object-contain" />
           <img src="/images/4-2 (1).jpg" alt="Partner 1" className="w-52 object-contain" />
           <img src="/images/4-3 (1).jpg" alt="Partner 1" className="w-52 object-contain" />

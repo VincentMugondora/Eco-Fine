@@ -15,7 +15,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="w-full py-10 mt-80 h-auto team">
+    <div className="w-full py-10 mt-28 lg:mt-80 h-auto team">
       <section className="container">
         <p className="text-2xl text-[#00B150] text-center font-bold">Best Team</p>
         <div className="mx-auto flex flex-col justify-between text-center">
@@ -30,11 +30,11 @@ const Team = () => {
           </div>
         </div>
         <div>
-          <div className="flex flex-wrap justify-center">
+          <div className="flex flex-wrap justify-center lg:justify-between">
             {teams.map((team, index) => (
               <div
                 key={index}
-                className="grid mt-48 border border-3 border-[#2e2e2e] rounded-md bg-[#24231D] p-5"
+                className="grid mt-48 border border-3 border-[#2e2e2e] rounded-md bg-[#24231D] lg:w-[20vw] p-5"
               >
                 <div className="">
                   <img
