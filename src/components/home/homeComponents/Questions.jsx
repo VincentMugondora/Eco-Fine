@@ -3,6 +3,7 @@ import Image from "/images/2-1.jpg";
 import Image2 from "/images/2-3.jpg";
 import Image3 from "/images/2-2.jpg";
 import Icons from "../../miscallaneous/Icons";
+import Buttons from "../../miscallaneous/Buttons";
 
 const Team = () => {
   const teams = [
@@ -23,9 +24,7 @@ const Team = () => {
           </p>
           <div className="flex justify-center">
             {" "}
-            <button className="bg-[#00B150] text-white poppins-regular rounded-md h-11 px-11">
-              Explore Team
-            </button>
+           <Buttons />
           </div>
         </div>
         <div>
