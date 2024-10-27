@@ -11,7 +11,7 @@ const Buttons = ({
   return (
     <Link
       to={to}
-      className={`bg-green-500 btns inline-flex items-center gap-1 text-${textColor} px-6 py-3 rounded-lg no-underline poppins-semibold hover:text-black`}
+      className={`bg-green-500 btns inline-flex cursor-pointer items-center gap-1 text-${textColor} px-6 py-3 rounded-lg no-underline poppins-semibold hover:text-black`}
       style={{ backgroundColor: bgColor }}
     >
       {text}

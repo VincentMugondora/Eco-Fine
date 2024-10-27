@@ -2,6 +2,7 @@ import Icons from "../../miscallaneous/Icons";
 import Logo from "/logo2 (1).svg";
 import { Link } from "react-router-dom";
 import { FaCalendar } from "react-icons/fa";
+import Input from "../../miscallaneous/Input";
 
 const FooterMiddle = () => {
   return (
@@ -85,10 +86,9 @@ const FooterMiddle = () => {
         <div className="col-md-3 mb-4">
           <h4 className="mb-3">NewsLater</h4>
           <p>Your opinion is important to us. So contact us for any service.</p>
+          <Input />
         </div>
-        <div>
-          
-        </div>
+        <div></div>
       </div>
     </div>
   );

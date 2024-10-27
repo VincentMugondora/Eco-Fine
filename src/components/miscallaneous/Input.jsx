@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-const EditableDiv = () => {
+const Input = () => {
   const [content, setContent] = useState(
-    "This is an editable div. Click here to edit."
+    "Your Email Address"
   );
 
   const handleInput = (e) => {
@@ -10,15 +10,17 @@ const EditableDiv = () => {
   };
 
   return (
-    <div
-      contentEditable
-      suppressContentEditableWarning={true} // Prevents React warnings about contentEditable
-      onInput={handleInput}
-      className="p-4 bg-white border border-gray-300 rounded-md shadow-md focus:outline-none focus:border-transparent hover:border-transparent transition-all"
-    >
-      {content}
+    <div>
+      <div
+        contentEditable
+        suppressContentEditableWarning={true}
+        onInput={handleInput}
+        className="bg-transparent py-2 px-2 border border-gray-300 rounded-l-md shadow-md focus:outline-none focus:border-transparent hover:border-transparent transition-all"
+      >
+        {content}
+      </div>
     </div>
   );
 };
 
-export default EditableDiv;
+export default Input;
