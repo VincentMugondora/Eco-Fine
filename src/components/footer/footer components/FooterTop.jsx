@@ -5,7 +5,7 @@ import { IoIosMail } from "react-icons/io";
 const FooterTop = () => {
   return (
     <div>
-      <div className="footer md:w-[90%] absolute left-1/2 transform -translate-x-1/2 py-5 px-3 -mt-24">
+      <div className="footer md:w-[90%] absolute left-1/2 transform -translate-x-1/2 py-5 px-3 -mt-52 lg:-mt-24">
         <div className="md:flex flex-wrap w-full justify-between">
           <div className="flex gap-4">
             <div className="h-20 w-20 flex items-center justify-center rounded-md bg-white">

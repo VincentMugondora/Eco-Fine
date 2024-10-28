@@ -6,7 +6,7 @@ import Input from "../../miscallaneous/Input";
 
 const FooterMiddle = () => {
   return (
-    <div className="container mx-auto pt-36 px-4 py-10">
+    <div className="container mx-auto pt-60 px-4 py-10 lg:pt-36">
       <div className="row text-white poppins-light">
         <div className="col-md-3 mb-4">
           <img src={Logo} alt="logo" className="w-28 mb-3 h-auto" />
@@ -68,7 +68,7 @@ const FooterMiddle = () => {
               <img
                 src="/images/footer/recent-post1-2.jpg"
                 alt=""
-                className="hover:scale-150"
+                className="hover:scale-150 md:w-60"
               />
             </div>
             <div className="cursor-pointer">
