@@ -3,6 +3,8 @@ import HeroSection from "./homeComponents/HeroSection";
 import ServiceSection from "./homeComponents/ServiceSection";
 import StepsSection from "./homeComponents/StepsSection";
 import Questions from "./homeComponents/Questions";
+import Team from "./homeComponents/Team";
+import LatestProjects from "./homeComponents/LatestProjects";
 
 
 const Home = () => {
@@ -12,6 +14,8 @@ const Home = () => {
      <HeroSection />
      <EcoFriendlyComponent />
      <ServiceSection />
+     <LatestProjects />
+     <Team />
      <StepsSection />
      <Questions />
     </div>
