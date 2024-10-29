@@ -38,27 +38,42 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <ul className="hidden md:flex md:space-x-6 items-center text-white">
             <li>
-              <Link to="/" className="hover:text-gray-300 no-underline text-white text-xl poppins-semibold">
+              <Link
+                to="/"
+                className="hover:text-gray-300 no-underline text-white text-xl poppins-semibold"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-gray-300 no-underline text-white text-xl poppins-semibold">
+              <Link
+                to="/about"
+                className="hover:text-gray-300 no-underline text-white text-xl poppins-semibold"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="/blog" className="hover:text-gray-300 no-underline text-white text-xl poppins-semibold">
+              <Link
+                to="/blog"
+                className="hover:text-gray-300 no-underline text-white text-xl poppins-semibold"
+              >
                 Blog
               </Link>
             </li>
             <li>
-              <Link to="/services" className="hover:text-gray-300 no-underline text-white text-xl poppins-semibold">
+              <Link
+                to="/services"
+                className="hover:text-gray-300 no-underline text-white text-xl poppins-semibold"
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-gray-300 no-underline text-white text-xl poppins-semibold">
+              <Link
+                to="/contact"
+                className="hover:text-gray-300 no-underline text-white text-xl poppins-semibold"
+              >
                 Contact
               </Link>
             </li>
@@ -78,7 +93,7 @@ const Navbar = () => {
           <li className="mt-12 mb-3 flex justify-between items-center">
             <Link
               to="/"
-              className="text-black no-underline hover:text-gray-600"
+              className="text-black no-underline cursor-pointer hover:text-gray-600"
             >
               Home
             </Link>
@@ -90,7 +105,7 @@ const Navbar = () => {
           <li className="mt-6 mb-3 flex items-center justify-between">
             <Link
               to="/about"
-              className="text-black no-underline hover:text-gray-600"
+              className="text-black no-underline cursor-pointer cursor-pointer hover:text-gray-600"
             >
               About
             </Link>
@@ -102,7 +117,7 @@ const Navbar = () => {
           <li className="mt-6 mb-3 flex items-center justify-between">
             <Link
               to="/blog"
-              className="text-black no-underline hover:text-gray-600"
+              className="text-black no-underline cursor-pointer hover:text-gray-600"
             >
               Blog
             </Link>
@@ -114,7 +129,7 @@ const Navbar = () => {
           <li className="mt-6 mb-3 items-center flex justify-between">
             <Link
               to="/services"
-              className="text-black no-underline hover:text-gray-600"
+              className="text-black no-underline cursor-pointer hover:text-gray-600"
             >
               Services
             </Link>
@@ -126,7 +141,7 @@ const Navbar = () => {
           <li className="mt-6 items-center flex justify-between">
             <Link
               to="/contact"
-              className="text-black no-underline hover:text-gray-600"
+              className="text-black no-underline cursor-pointer hover:text-gray-600"
             >
               Contact
             </Link>
